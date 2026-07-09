@@ -137,21 +137,25 @@ python examples/run_h3_axiomatic_tests.py
 # Run the H4 cross-domain simulation pipeline
 python examples/run_h4_axiomatic_tests.py
 ````
-
-Note for Windows users (CMD): Replace export PYTHONPATH=src with set PYTHONPATH=src before executing the python commands.
+````text
+Note for Windows users (CMD):
+Replace export PYTHONPATH=src with set PYTHONPATH=src before executing the python commands.
+````
 
 ## Study Pre-registration & Regulatory Compliance
 
-Conceptual Protocol: The mathematical axioms, inferential plans, and operational workflows of this framework were pre-registered on the Open Science Framework (OSF) and can be verified via https://doi.org/10.17605/osf.io/a84pq.
+- Conceptual Protocol: The mathematical axioms, inferential plans, and operational workflows of this framework were pre-registered on the Open Science Framework (OSF) and can be verified via https://doi.org/10.17605/osf.io/a84pq.
 
-````text
-Data Availability and Ethics: The evaluation dataset enclosed in this repository (Dataset_Bioinformatic_Flexible.csv) consists of real-world clinical metrics obtained in strict accordance with the European Medical Device Regulation (MDR 2017/745) under an official Post-Market Clinical Follow-up (PMCF) plan. All participating patients provided explicit, written informed consent prior to data collection. In compliance with the European General Data Protection Regulation (GDPR), the dataset has been subjected to a rigorous, irreversible anonymization process at the source (Centro de Tecnología Biomédica, CTB-UPM), ensuring that no protected health information (PHI) or longitudinal patient identity can be reverse-engineered. This enables full algorithmic reproducibility of the validation suites using genuine clinical trajectories while maintaining absolute patient privacy.
-````
+- Data Availability and Ethics: The evaluation dataset enclosed in this repository (Dataset_Bioinformatic_Flexible.csv) consists of real-world clinical metrics obtained in strict accordance with the European Medical Device Regulation (MDR 2017/745) under an official Post-Market Clinical Follow-up (PMCF) plan. All participating patients provided explicit, written informed consent prior to data collection. In compliance with the European General Data Protection Regulation (GDPR), the dataset has been subjected to a rigorous, irreversible anonymization process at the source (Centro de Tecnología Biomédica, CTB-UPM), ensuring that no protected health information (PHI) or longitudinal patient identity can be reverse-engineered. This enables full algorithmic reproducibility of the validation suites using genuine clinical trajectories while maintaining absolute patient privacy.
 
 ## Citation
 
 If you use this framework, its mathematical operators, or the accompanying implementation in an academic publication, please cite:
 
 ````text
-Felix-Gonzalez, N., Gomez-Arguelles, JM & Maestu-Unturbe, C. (2026).Structural Fidelity of Aggregated Patient-Reported Outcome Measures:Development and Validation of the Clinical Structural Representation Framework (CSRF). Journal of Clinical Epidemiology. DOI pending publication.
+Felix-Gonzalez, N., Gomez-Arguelles, JM & Maestu-Unturbe, C. (2026). 
+Structural Fidelity of Aggregated Patient-Reported Outcome Measures: 
+Development and Validation of the Clinical Structural Representation Framework (CSRF). 
+Journal of Clinical Epidemiology. 
+DOI pending publication.
 ````
