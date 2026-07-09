@@ -1,0 +1,14 @@
+{
+  "H1": {
+    "experiment_a_monotonic": true,
+    "experiment_b_monotonic": true,
+    "max_sf_at_baseline": 1.0,
+    "min_sf_at_extreme": 0.20
+  },
+  "H2": {
+    "svd_gt_mean": true,
+    "mean_gt_median": true,
+    "median_gt_binary": true,
+    "binary_gt_random": true
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "audit_manifest_report": {
+        "timestamp": "2026-07-01 12:25:00 CEST",
+        "framework_version": "1.0.0-beta",
+        "software_version": "pycsrf-v1.0",
+        "random_seed": 42,
+        "crypto_integrity_check": {
+            "baseline_fingerprint": "6935c40f62dca971b569e5d762fbb1c43aa101c4a56972e0a295bfbb044ff1e2",
+            "evaluation_hash": "6935c40f62dca971b569e5d762fbb1c43aa101c4a56972e0a295bfbb044ff1e2",
+            "integrity_status": "PASS"
+        },
+        "evaluation_metrics": {
+            "execution_mode": "Frozen-Model Prospective Validation",
+            "bootstrap_iterations": 1000,
+            "global_fidelity_score": 0.8906
+        }
+    }
+}
