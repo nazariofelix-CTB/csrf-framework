@@ -103,52 +103,55 @@ CSRF/
 This framework requires Python 3.8+. It is recommended to deploy the tool within a clean virtual environment or a Google Colab instance.
 1. Clone the repository
 
-```bash
+````bash
 
-git clone [https://github.com/nazariofelix-CTB/csrf.git](https://github.com/nazariofelix-CTB/csrf.git)
-cd csrf
-```
+git clone https://github.com/nazariofelix-CTB/csrf.git
+````
 
 2. Install dependencies
-```bash
+````bash
 
 pip install -r requirements.txt
-```
+````
 
 ***
 
 ## Quick Start Guide
 
 To verify the installation and execute the baseline multi-fidelity diagnostic pipeline using the enclosed anonymized PMCF clinical dataset (compliant with MDR 2017/745), run the following commands from the root directory:
-```bash
+````bash
 
 # 1. Add the source directory to your environment path
 export PYTHONPATH=src
 
 # 2. Run the baseline multidimensional spatial fidelity (H2) demonstration
 python examples/run_h2_demo.py
-```
+````
 
 To execute the full suite of axiomatic validation and stress-testing experiments for informational fidelity (H3) or cross-domain dynamics (H4):
-```bash
+````bash
 
 # Run the H3 axiomatic evaluation suite
 python examples/run_h3_axiomatic_tests.py
 
 # Run the H4 cross-domain simulation pipeline
 python examples/run_h4_axiomatic_tests.py
-```
+````
 
-    Note for Windows users (CMD): Replace export PYTHONPATH=src with set PYTHONPATH=src before executing the python commands.
+Note for Windows users (CMD): Replace export PYTHONPATH=src with set PYTHONPATH=src before executing the python commands.
 
 ## Study Pre-registration & Regulatory Compliance
 
-    Conceptual Protocol: The mathematical axioms, inferential plans, and operational workflows of this framework were pre-registered on the Open Science Framework (OSF) and can be verified via https://doi.org/10.17605/osf.io/a84pq.
+Conceptual Protocol: The mathematical axioms, inferential plans, and operational workflows of this framework were pre-registered on the Open Science Framework (OSF) and can be verified via https://doi.org/10.17605/osf.io/a84pq.
 
-    Data Availability and Ethics: The evaluation dataset enclosed in this repository (Dataset_Bioinformatic_Flexible.csv) consists of real-world clinical metrics obtained in strict accordance with the European Medical Device Regulation (MDR 2017/745) under an official Post-Market Clinical Follow-up (PMCF) plan. All participating patients provided explicit, written informed consent prior to data collection. In compliance with the European General Data Protection Regulation (GDPR), the dataset has been subjected to a rigorous, irreversible anonymization process at the source (Centro de Tecnología Biomédica, CTB-UPM), ensuring that no protected health information (PHI) or longitudinal patient identity can be reverse-engineered. This enables full algorithmic reproducibility of the validation suites using genuine clinical trajectories while maintaining absolute patient privacy.
+````text
+Data Availability and Ethics: The evaluation dataset enclosed in this repository (Dataset_Bioinformatic_Flexible.csv) consists of real-world clinical metrics obtained in strict accordance with the European Medical Device Regulation (MDR 2017/745) under an official Post-Market Clinical Follow-up (PMCF) plan. All participating patients provided explicit, written informed consent prior to data collection. In compliance with the European General Data Protection Regulation (GDPR), the dataset has been subjected to a rigorous, irreversible anonymization process at the source (Centro de Tecnología Biomédica, CTB-UPM), ensuring that no protected health information (PHI) or longitudinal patient identity can be reverse-engineered. This enables full algorithmic reproducibility of the validation suites using genuine clinical trajectories while maintaining absolute patient privacy.
+````
 
 ## Citation
 
 If you use this framework, its mathematical operators, or the accompanying implementation in an academic publication, please cite:
 
-    Felix-Gonzalez, N., Gomez-Arguelles, JM & Maestu-Unturbe, C. (2026).Structural Fidelity of Aggregated Patient-Reported Outcome Measures:Development and Validation of the Clinical Structural Representation Framework (CSRF). Journal of Clinical Epidemiology. DOI pending publication.
+````text
+Felix-Gonzalez, N., Gomez-Arguelles, JM & Maestu-Unturbe, C. (2026).Structural Fidelity of Aggregated Patient-Reported Outcome Measures:Development and Validation of the Clinical Structural Representation Framework (CSRF). Journal of Clinical Epidemiology. DOI pending publication.
+````
