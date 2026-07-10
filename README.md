@@ -28,72 +28,76 @@ The framework is organized following professional Python production and Open Sci
 ```text
 CSRF/
 ├── Dataset_Bioinformatic_Flexible.csv  <- Anonymized PMCF clinical dataset (MDR 2017/745)
+├── LICENSE                             <- MIT Open Source License
 ├── README.md                           <- Comprehensive documentation and verification guide
 ├── requirements.txt                    <- Framework environment dependencies
 │
 ├── docs/
-│   └── H2_validation_report.md         <- Detailed mathematical validation logs for SF_H2
+│   ├── H1_validation_report.md         <- Experimental & axiomatic validation logs for TF_H1
+│   ├── H2_validation_report.md         <- Detailed mathematical validation logs for SF_H2
+│   ├── H3_validation_report.md         <- Experimental & informational validation logs for IF_H3
+│   └── H4_validation_report.md         <- Experimental & topological validation logs for CF_H4
 │
 ├── notebooks/
-│   └── csrf_orchestration_pipeline.ipynb <- End-to-end interactive Google Colab tutorial
+│   └── csrf_orchestration_pipeline.ipynb <- End-to-end interactive validation tutorial
 │
-├── src/
-│   └── csrf/                           <- Main Core Source Code Package
-│       ├── __init__.py
-│       │
-│       ├── common/                     <- Shared utility modules and mathematical bases
-│       │   ├── __init__.py
-│       │   ├── constants.py            <- Global validation thresholds and boundaries
-│       │   ├── normalization.py        <- Vector normalizers and data alignment
-│       │   ├── synthesis.py            <- Monte Carlo noise injectors & synthetic engines
-│       │   └── validation.py           <- Axiomatic property checkers
-│       │
-│       ├── core/                       <- Abstract framework primitives & configurations
-│       │   ├── __init__.py
-│       │   ├── base.py
-│       │   ├── config.py
-│       │   └── contracts.py
-│       │
-│       ├── cross_domain/               <- Cross-Domain Fidelity Module (H4)
-│       │   ├── __init__.py
-│       │   └── analyzer.py
-│       │
-│       ├── informational/              <- Informational Fidelity Module (H3)
-│       │   ├── __init__.py
-│       │   ├── analyzer.py
-│       │   └── fidelis.py
-│       │
-│       ├── io/                         <- Data ingestion layer
-│       │   ├── __init__.py
-│       │   └── loaders.py
-│       │
-│       ├── metrics/                    <- Computational distance and statistical suites
-│       │   ├── __init__.py
-│       │   ├── bootstrap.py            <- Confidence interval computation engines
-│       │   └── distance.py             <- Multidimensional distance operators
-│       │
-│       ├── spatial/                    <- Spatial Fidelity Module (H2)
-│       │   ├── __init__.py
-│       │   └── analyzer.py
-│       │
-│       └── temporal/                   <- Temporal Fidelity Module (H1)
-│           ├── __init__.py
-│           ├── analyzer.py
-│           ├── comparators.py
-│           ├── markov.py               <- Longitudinal Markov trajectory chains
-│           └── operators.py
-│
-└── tests/                              <- Automated Verification & Testing Suites
-    ├── test_core.py
-    ├── test_cross_domain.py
-    ├── test_informational.py
-    ├── test_spatial.py
-    ├── test_temporal.py
-    │
-    └── canonical/                      <- Regression suite & reference golden outputs
-        ├── diagnostic_h1_bug.py
-        ├── expected_results.json       <- Fixed target results for SF_H1 validation
-        └── run_h1.py
+└── src/                                <- Main Source Directory
+    └── csrf/                           <- Main Core Source Code Package
+        ├── __init__.py
+        │
+        ├── common/                     <- Shared utility modules and mathematical bases
+        │   ├── __init__.py
+        │   ├── constants.py
+        │   ├── normalization.py
+        │   ├── synthesis.py
+        │   └── validation.py
+        │
+        ├── core/                       <- Abstract framework primitives & configurations
+        │   ├── __init__.py
+        │   ├── base.py
+        │   ├── config.py
+        │   └── contracts.py
+        │
+        ├── cross_domain/               <- Cross-Domain Fidelity Module (H4)
+        │   ├── __init__.py
+        │   └── analyzer.py
+        │
+        ├── informational/              <- Informational Fidelity Module (H3)
+        │   ├── __init__.py
+        │   ├── analyzer.py
+        │   └── fidelis.py
+        │
+        ├── io/                         <- Data ingestion layer
+        │   ├── __init__.py
+        │   └── loaders.py
+        │
+        ├── metrics/                    <- Computational distance and statistical suites
+        │   ├── __init__.py
+        │   ├── bootstrap.py
+        │   └── distance.py
+        │
+        ├── spatial/                    <- Spatial Fidelity Module (H2)
+        │   ├── __init__.py
+        │   └── analyzer.py
+        │
+        ├── temporal/                   <- Temporal Fidelity Module (H1)
+        │   ├── __init__.py
+        │   ├── analyzer.py
+        │   ├── comparators.py
+        │   ├── markov.py
+        │   └── operators.py
+        │
+        └── tests/                      <- Automated Verification & Testing Suites (Internalized)
+            ├── test_core.py
+            ├── test_cross_domain.py
+            ├── test_informational.py
+            ├── test_spatial.py
+            ├── test_temporal.py
+            │
+            └── canonical/              <- Regression suite & reference golden outputs
+                ├── diagnostic_h1_bug.py
+                ├── expected_results.json
+                └── run_h1.py
 ````
 
 ***
