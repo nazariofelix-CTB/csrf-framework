@@ -132,10 +132,16 @@ export PYTHONPATH=src
 python examples/run_h2_demo.py
 ````
 
-To execute the full suite of axiomatic validation and stress-testing experiments for informational fidelity (H3) or cross-domain dynamics (H4):
+To execute the full suite of axiomatic validation, simulation benchmarks, and stress-testing experiments across all framework dimensions (H1, H2, H3, and H4):
 ````bash
 
-# Run the H3 axiomatic evaluation suite
+# Run the H1 temporal trajectory evaluation suite
+python examples/canonical/run_h1.py
+
+# Run the H2 axiomatic spatial fidelity evaluation suite
+python examples/run_h2_axiomatic_tests.py
+
+# Run the H3 informational fidelity evaluation suite
 python examples/run_h3_axiomatic_tests.py
 
 # Run the H4 cross-domain simulation pipeline
