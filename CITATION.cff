@@ -4,13 +4,13 @@ authors:
   - family-names: "Félix González"
     given-names: "Nazario"
     affiliation: "Centro de Tecnología Biomédica, Universidad Politécnica de Madrid"
-    # orcid: "https://orcid.org/0000-0000-0000-0000" # Descomenta y añade tu ORCID si lo deseas
+    orcid: "https://orcid.org/0000-0003-4433-3707"
 title: "Clinical State Representation Framework (CSRF)"
 version: "1.0.0"
-doi: "10.5281/zenodo.XXXXXXX" # Reemplázalo con tu DOI real una vez Zenodo te lo asigne
+doi: "10.5281/zenodo.21296980" 
 date-released: 2026-07-10
-url: "https://github.com/tu-usuario/tu-repositorio" # Reemplaza con la URL real de tu GitHub
-repository-code: "https://github.com/tu-usuario/tu-repositorio"
+url: "https://github.com/nazariofelix-CTB/csrf-framework" 
+repository-code: "https://github.com/nazariofelix-CTB/csrf-framework"
 keywords:
   - "clinical state representation"
   - "neuromodulation"
