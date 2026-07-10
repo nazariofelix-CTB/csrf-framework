@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Félix González"
+    given-names: "Nazario"
+    affiliation: "Centro de Tecnología Biomédica, Universidad Politécnica de Madrid"
+    # orcid: "https://orcid.org/0000-0000-0000-0000" # Descomenta y añade tu ORCID si lo deseas
+title: "Clinical State Representation Framework (CSRF)"
+version: "1.0.0"
+doi: "10.5281/zenodo.XXXXXXX" # Reemplázalo con tu DOI real una vez Zenodo te lo asigne
+date-released: 2026-07-10
+url: "https://github.com/tu-usuario/tu-repositorio" # Reemplaza con la URL real de tu GitHub
+repository-code: "https://github.com/tu-usuario/tu-repositorio"
+keywords:
+  - "clinical state representation"
+  - "neuromodulation"
+  - "biosensing"
+  - "statistical validation"
+  - "open science"
+license: "MIT"
